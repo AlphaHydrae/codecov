@@ -3,5 +3,7 @@ jobs:
     - language: node_js
       node_js:
         - 14
+      before_install:
+        - cd node
       after_script:
         - npm run codecov
