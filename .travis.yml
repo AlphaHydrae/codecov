@@ -14,5 +14,3 @@ jobs:
         - 2.7
       before_install:
         - cd ruby
-      before_script:
-        - cp codecov.yml ..
