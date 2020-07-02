@@ -1,0 +1,7 @@
+jobs:
+  include:
+    - language: node_js
+      node_js:
+        - 14
+      after_script:
+        - npm run codecov

@@ -4,5 +4,4 @@ include:
   - spec
 reporter:
   - html
-  - lcov
   - text-summary

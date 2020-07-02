@@ -5,6 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "codecov": "nyc report --reporter=text-lcov | codecov",
     "test": "nyc mocha spec/**/*.spec.js"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "codecov": "^3.7.0",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0"
   }
