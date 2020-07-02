@@ -5,7 +5,7 @@ require 'codecov'
 
 class SimpleCov::Formatter::Codecov
   def shortened_filename(file)
-    "ruby/#{super.shortened_filename(file)}"
+    "ruby/#{super(file)}"
   end
 end
 
