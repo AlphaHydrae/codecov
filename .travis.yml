@@ -1,5 +1,6 @@
 jobs:
   include:
+
     - language: node_js
       node_js:
         - 14
@@ -7,3 +8,9 @@ jobs:
         - cd node
       after_script:
         - npm run codecov
+
+    - language: ruby
+      ruby:
+        - 2.7
+      before_install:
+        - cd ruby
