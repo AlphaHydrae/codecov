@@ -1,6 +1,18 @@
 jobs:
   include:
 
+    # Elixir
+    - language: elixir
+      elixir:
+        - 1.10.3
+      otp_release:
+        - 23.0.2
+      script:
+        - MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
+
+    # Node.js
     - language: node_js
       node_js:
         - 14
@@ -9,6 +21,7 @@ jobs:
       after_script:
         - npm run codecov
 
+    # Ruby
     - language: ruby
       ruby:
         - 2.7
