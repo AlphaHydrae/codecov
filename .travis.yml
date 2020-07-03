@@ -7,6 +7,8 @@ jobs:
         - 1.10.3
       otp_release:
         - 23.0.2
+      before_install:
+        - cd elixir
       script:
         - MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json
       after_success:
