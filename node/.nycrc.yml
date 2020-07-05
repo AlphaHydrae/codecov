@@ -1,6 +1,4 @@
-all: true
-include:
-  - example.js
+exclude:
   - spec
 reporter:
   - html
