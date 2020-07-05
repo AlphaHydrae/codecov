@@ -6,8 +6,7 @@ defmodule Example.MixProject do
       app: :example,
       version: "1.0.0",
       elixir: "~> 1.10",
-      start_permanent: Mix.env() == :prod,
-      test_coverage: [tool: ExCoveralls],
+      test_coverage: [summary: true, tool: ExCoveralls],
       deps: deps()
     ]
   end
