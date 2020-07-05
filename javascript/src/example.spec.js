@@ -1,6 +1,6 @@
-const { expect } = require('chai');
+import { expect } from 'chai';
 
-const { add, subtract } = require('../lib/example');
+import { add, subtract } from './example';
 
 describe('add', function() {
   it('should add two numbers', function() {
