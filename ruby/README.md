@@ -87,7 +87,7 @@
        - cd ruby
    ```
 
-   > See [`../travis.yml`](../travis.yml) for an example of a Travis
+   > See [`../travis.yml`](../.travis.yml) for an example of a Travis
    > configuration that produces a merged Codecov report with multiple
    > applications in various languages in the same project.
 1. Add the `coverage` directory to your `.gitignore` file.

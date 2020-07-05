@@ -1,3 +1,5 @@
+# Test all applications concurrently using a build matrix (see
+# https://docs.travis-ci.com/user/build-matrix/).
 jobs:
   include:
 
