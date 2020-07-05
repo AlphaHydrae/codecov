@@ -19,7 +19,9 @@ jobs:
     # Node.js
     - language: node_js
       node_js:
-        - 14
+        - 14.4.0
+      env:
+        - NODE_ENV=test
       before_install:
         - cd node
       after_script:
@@ -28,6 +30,6 @@ jobs:
     # Ruby
     - language: ruby
       ruby:
-        - 2.7
+        - 2.7.1
       before_install:
         - cd ruby
