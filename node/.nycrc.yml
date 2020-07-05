@@ -1,6 +1,6 @@
 all: true
 include:
-  - index.js
+  - example.js
   - spec
 reporter:
   - html
