@@ -1,4 +1,4 @@
-const { add, subtract } = require('../example');
+const { add, subtract } = require('../lib/example');
 const { expect } = require('chai');
 
 describe('add', function() {
