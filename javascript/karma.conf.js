@@ -7,22 +7,18 @@ process.env.CHROME_BIN = puppeteer.executablePath();
 module.exports = config => {
   config.set({
     browsers: [ 'ChromeHeadless' ],
-    coverageReporter: {
+    coverageIstanbulReporter: {
       dir: 'coverage',
-      subdir: '.',
-      reporters: [
-        { type: 'html', subdir: 'html' },
-        { type: 'lcovonly', subdir: 'lcov' }
-      ]
+      reports: [ 'html', 'lcovonly' ]
     },
     files: [
       'src/**/*.js'
     ],
     frameworks: [ 'mocha', 'source-map-support' ],
     preprocessors: {
-      'src/**/*.js': [ 'webpack', 'coverage' ]
+      'src/**/*.js': [ 'webpack' ]
     },
-    reporters: [ 'spec', 'coverage' ],
+    reporters: [ 'spec', 'coverage-istanbul' ],
     webpack: webpackConfig,
     webpackMiddleware: {
       stats: 'errors-only'
