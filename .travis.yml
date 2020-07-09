@@ -18,6 +18,17 @@ jobs:
       after_success:
         - bash <(curl -s https://codecov.io/bash)
 
+    # JavaScript
+    - language: node_js
+      node_js:
+        - 14.5.0
+      env:
+        - NODE_ENV=test
+      before_install:
+        - cd javascript
+      after_script:
+        - npm run codecov
+
     # Node.js
     - language: node_js
       node_js:
