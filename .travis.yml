@@ -49,7 +49,7 @@ jobs:
         - cd php
         - travis_retry composer install --no-interaction
       script:
-        - vendor/bin/phpunit --coverage-clover=coverage.xml
+        - vendor/bin/phpunit --coverage-clover=coverage.xml tests
       after_script:
         - bash <(curl -s https://codecov.io/bash)
 
