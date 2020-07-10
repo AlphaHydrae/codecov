@@ -43,7 +43,7 @@ jobs:
     # PHP
     - language: php
       php:
-        - 7.3.20
+        - 7.3
       script:
         - vendor/bin/phpunit --coverage-clover=coverage.xml
       after_script:
