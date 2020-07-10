@@ -40,6 +40,16 @@ jobs:
       after_script:
         - npm run codecov
 
+    # PHP
+    - language: php
+      php:
+        - 7.3.20
+      script:
+        - vendor/bin/phpunit --coverage-clover=coverage.xml
+      after_script:
+        - bash <(curl -s https://codecov.io/bash)
+
+
     # Ruby
     - language: ruby
       ruby:
