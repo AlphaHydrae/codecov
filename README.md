@@ -11,8 +11,11 @@ libraries:
 
 * [Elixir](./elixir) - ([ExUnit](https://hexdocs.pm/ex_unit/ExUnit.html),
   [ExCoveralls](https://github.com/parroty/excoveralls#readme))
+* [JavaScript](./javascript) - ([Karma](https://karma-runner.github.io),
+  [Mocha](https://mochajs.org), [Webpack](https://webpack.js.org/))
 * [Node.js](./node) - ([Mocha](https://mochajs.org),
   [Chai](https://www.chaijs.com), [nyc](https://github.com/istanbuljs/nyc))
+* [PHP](./php) - ([PHPUnit](https://phpunit.de))
 * [Ruby](./ruby) - ([RSpec](https://rspec.info),
   [SimpleCov](https://github.com/colszowka/simplecov))
 
