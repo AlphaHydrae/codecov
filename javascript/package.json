@@ -32,7 +32,7 @@
     "@jsdevtools/coverage-istanbul-loader": "^3.0.3",
     "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
-    "codecov": "^3.7.0",
+    "codecov": "^3.7.1",
     "karma": "^5.1.0",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
