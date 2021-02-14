@@ -21,7 +21,7 @@ jobs:
     # JavaScript
     - language: node_js
       node_js:
-        - 14.5.0
+        - 14.15.5
       env:
         - NODE_ENV=test
       before_install:
@@ -32,7 +32,7 @@ jobs:
     # Node.js
     - language: node_js
       node_js:
-        - 14.5.0
+        - 14.15.5
       env:
         - NODE_ENV=test
       before_install:
