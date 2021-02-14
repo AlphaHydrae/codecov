@@ -4,7 +4,6 @@ const root = __dirname;
 
 module.exports = {
   devtool: 'inline-source-map',
-  entry: './src/example.js',
   mode: 'development',
   module: {
     rules: [
@@ -24,8 +23,7 @@ module.exports = {
     ]
   },
   output: {
-    path: joinPath(root, 'dist'),
-    filename: 'example.js'
+    path: joinPath(root, 'dist')
   },
   resolve: {
     extensions: [ '.js' ]

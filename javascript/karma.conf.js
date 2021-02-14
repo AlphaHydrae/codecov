@@ -14,7 +14,15 @@ module.exports = config => {
     files: [
       'src/**/*.js'
     ],
-    frameworks: [ 'mocha', 'source-map-support' ],
+    frameworks: [ 'mocha', 'source-map-support', 'webpack' ],
+    plugins: [
+      'karma-chrome-launcher',
+      'karma-coverage-istanbul-reporter',
+      'karma-mocha',
+      'karma-source-map-support',
+      'karma-spec-reporter',
+      'karma-webpack'
+    ],
     preprocessors: {
       'src/**/*.js': [ 'webpack' ]
     },
