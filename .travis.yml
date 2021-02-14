@@ -43,7 +43,7 @@ jobs:
     # PHP
     - language: php
       php:
-        - 7.4.15
+        - 8.0.2
       env:
         XDEBUG_MODE: coverage
       before_script:

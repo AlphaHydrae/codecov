@@ -6,4 +6,4 @@ ruby 3.0.0
 
 # You may need to install these libraries, and possibly more, to compile PHP:
 # bison, gd, libiconv, re2c, zlib.
-php 7.4.15
+php 8.0.2
