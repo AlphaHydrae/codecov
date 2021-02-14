@@ -21,7 +21,7 @@ defmodule Example.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:excoveralls, "~> 0.13.0", only: :test}
+      {:excoveralls, "~> 0.14.0", only: :test}
     ]
   end
 end
